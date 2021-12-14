@@ -37,6 +37,13 @@ There are currently no prewritten tests for this application, but you can use Cy
 - POST - Inserts a new record into the MYSQL database based on req.body 
 - PUT - Updates an existing record by ID number based on req.body 
 - DELETE - Deletes an existing record by ID number
+
+`/api/biomes` - API route to see biome information for each animal
+- GET - Returns a JSON object containing information about each biome record
+- POST - Inserts a new record into the MYSQL database based on req.body 
+- PUT - Updates an existing record by biome ID number based on req.body 
+- DELETE - Deletes an existing record by biome ID number
+
 ## Known Bugs
 As of 12/2/2021, the POST method for the animals API unfortunately does not function due to foreign key constraints in the database that requires each record in the animals table to have values in the foreign key columns (such as extinction_extinction_id, etc).
 ## Future Developments 
