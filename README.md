@@ -61,6 +61,9 @@ animal name with the animal_id
 
 ## Known Bugs
 As of 12/2/2021, the POST method for the animals API unfortunately does not function due to foreign key constraints in the database that requires each record in the animals table to have values in the foreign key columns (such as extinction_extinction_id, etc).
+
+As of 12/13/2021, the PUT method for the fight_mode_id API functions, however it is not useful because the fight_mode_id is applied to mutliple animals. Therefore updating the fight_mode for one animal changes it for all animals under the same fight_mode_id. Also the fight_mode information is incorrect due to the way the database indicies are set up.
+
 ## Future Developments 
 1. Create a user/login system to allow for proper access. This will allow people with admistrative rights to update and delete records, while also filtering out internet trolls.
 2. The further development of the add and delete feature of the front-end. This will allow full functionality for users with administrative rights as mentioned above.
